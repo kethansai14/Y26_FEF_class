@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body bgcolor="lightblue">
+    <h1>Registration Form</h1>
+    <br action="#"  method="post">
+    <fieldset>
+        <legend> Personal information</legend>
+        <label>Student Name:</label>
+        <input type="text" 
+            placeholder="Enter your name" name="sname" required>
+        <br></br>
+        <label>Email:</label>
+        <input type="email"
+             placeholder="Enter your email" required>
+        <br></br>
+
+        <label>Password</label>
+        <input type="password"
+             placeholder="Enter password" required>
+        
+        </fieldset>
+        <br></br>
+        <label>Age:</label>
+        <input type="number"
+             placeholder="Enter Age" min="18" max="50" required>
+        <br></br>
+        <label>Gender:</label>
+        <input type="radio"
+                value="Male" > Male
+        <input type="radio"
+        value="FeMale" > female
+        <br></br>
+       <label>Select a Course:</label> 
+        <input list="courses" name="course"> 
+            <datalist id="courses"> 
+            <option value="B.TECH"> 
+            <option value="M.TECH">
+            <option value="B.CA"> 
+            <option value="M.CA"> 
+            <option value="BBA">
+            <option value="MBA">  
+        </datalist> 
+    <br><br>
+    <label>Skills:</label>
+    <input type="checkbox" 
+                value="CSS">CSS
+    <input type="checkbox"
+                value="JAVA">JAVA
+    <input type="checkbox"
+                value="C++">C++
+    <br></br>
+    <label>Department:</label>
+    <select>
+        <option value="">-------SELECT A DEPARTMENT-------</option>
+        <option value="CSE ">COMPUTER SCIENCE AND ENGINEERING </option>
+        <option val ue="ECE">ELECTRICAL COMMUNICATION AND ENGINEERING</option>
+        <option value="AIDS">ARTIFICIAL INTELLIGENCE AND DATA SCIENCE</option>
+        <option value="CSIT">COMPUTER SCIENCE AND INFORMATION TECHNOLOGY</option>
+        <OPTION value="EEE">ELECTRICALS AND ELECTRONICS ENGINEERING</OPTION>
+        <option value="MECH">MECHANICAL ENGINEERING</option>
+        <option value="CIVIL">CIVIL ENGINEERING</option>
+    </select>
+    <br></br>
+    <label>Date of birth:</label>
+    <input type="date">
+    <br></br>
+    <label>Address:</label>
+    <textarea name="Address" rows="4" cols="30"
+                placeholder="Enter your Address"></textarea>
+    <br></br>
+    <label>Upload a photo</label>
+    <input type="file" name="photo">
+    <br></br>
+
+    <input type="submit" name="Register">
+    <input type="reset"  name="Clear">
+
+
+    </form>
+
+    
+</body>
+</html>
